@@ -1,0 +1,23 @@
+/*
+[0]GENERAL
+[1]INPUT
+[2]OUTPUT
+[3]MEDIA QUERIES
+*/
+
+
+/*[0] GENERAL*/
+body{
+	text-align: center;
+	background-color: #000;
+	color:#684691;
+}
+input, button{
+	margin: 1% auto;
+	display: block;
+}
+/*[1] INPUT*/
+.ball{
+	width: 300px;
+	height: 300px;
+}
