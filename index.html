@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<!-- my custom css -->
 		<link rel="stylesheet" href="css/main.css">
+		<!-- my custom fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Norican" rel="stylesheet">
 	</head>
 	<body>
 
@@ -19,8 +21,8 @@
 		<div class="input">
 			<h1>Check your horoscope!</h1>
 			<img src="img/crystalball.png" class="ball" alt="crystal ball">
-			<input type="text" name="horoscope" id="">
-			<button type="button">enter your horoscope</button>
+			<input type="text" name="horoscope" id="inputMySign">
+			<button type="button" onclick="myZodiacSign()">enter</button>
 
 		</div>		
 		<!-- ENDING USER INPUT PART -->
@@ -29,9 +31,12 @@
 
 		<!-- STARTING OUTPUT PART -->
 		<div class="output">
-			<h1></h1>
-			<img src="" alt="" id="">
-			<p></p>
+			<h1 id="myZodiacSign"></h1>
+			<img src="" alt="" id="mySignImg">
+			<p id="myPosTraits"></p>
+			<p id="myNegTraits"></p>
+			<p id="myLoveMatch"></p>
+			<p id="myLuckyDay"></p>
 		</div>
 		<!-- ENDING OUTPUT PART -->
 

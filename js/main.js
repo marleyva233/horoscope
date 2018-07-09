@@ -1,11 +1,8 @@
-// VARIABLES
-//each horoscope sign should have it's own variable name
-//to be able to call it in the function
-//there will be 12 variables for the signs
+// GETTING SET UP FOR THE FUNCTION
 
-
-// an array of the signs, probably will use it somewhere LOL
-//the object can be accessed through the arrays index
+//ARRAY 
+// i am creating an array to later access
+//i have created 12 objects, each one containing a different sign
 var zodiacSigns=[
 	{
 		sign: "Aries",
@@ -64,7 +61,7 @@ var zodiacSigns=[
 		luckyDay: "Tuesday",
 	},
 	{
-		sign: "Saggitarius",
+		sign: "Sagittarius",
 		positiveTraits: "Generous, idealistic, great sense of humour.",
 		negativeTraits: "Promises more than can deliver, very impatient, will say anything no matter how undiplomatic.",
 		loveMatch: "Gemini and Aries.",
@@ -100,9 +97,92 @@ var zodiacSigns=[
 //to be displayed separately for ease of use.
 //in HTML i need to create an element with a unique ID
 //the element will display each property
-// try <h1 id="mySign"> <p id="myPosTraits">
-// <p id="myNegTraits"> <p id="myLoveMatch"> <p id="myluckyDay">
+
 //when the user enters their sign the button will contain a function 
 //that retrieves a specific item in the array
 //so we need to assign hooks
 // FUNCTION WHEN CLICKING SUBMIT ON THE BUTTON
+//the input id is inputMySign
+//now that the HTML for the ouput part of this project is ready
+//i can start coding the function that will be triggered 
+//by the onClick property on the button 
+function myZodiacSign(){
+	var mySign=inputMySign.value;
+	var mySign=mySign.toLowerCase();
+	console.log(mySign);
+	if (mySign=="aries") {
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[0].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[0].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[0].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[0].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[0].luckyDay;
+	} else if(mySign=="taurus"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[1].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[1].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[1].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[1].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[1].luckyDay;
+	}else if(mySign=="gemini"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[2].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[2].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[2].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[2].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[2].luckyDay;
+	}else if(mySign=="cancer"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[3].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[3].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[3].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[3].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[3].luckyDay;
+	}else if(mySign=="leo"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[4].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[4].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[4].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[4].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[4].luckyDay;
+	}else if(mySign=="virgo"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[5].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[5].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[5].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[5].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[5].luckyDay;
+	}else if(mySign=="libra"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[6].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[6].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[6].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[6].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[6].luckyDay;
+	}else if(mySign=="scorpio"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[7].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[7].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[7].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[7].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[7].luckyDay;
+	}else if(mySign=="sagittarius"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[8].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[8].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[8].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[8].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[8].luckyDay;
+	}else if(mySign=="capricorn"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[9].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[9].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[9].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[9].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[9].luckyDay;
+	}else if(mySign=="aquarius"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[10].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[10].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[10].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[10].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[10].luckyDay;
+	}else if(mySign=="pisces"){
+		document.getElementById("myZodiacSign").textContent=zodiacSigns[11].sign;
+		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[11].positiveTraits;
+		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[11].negativeTraits;
+		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[11].loveMatch;
+		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[11].luckyDay;
+	}else{
+		document.getElementById("myPosTraits").textContent="I'm sorry I couldn't find your horoscope. Check your spelling and try again.";
+	}
+}

@@ -8,16 +8,35 @@
 
 /*[0] GENERAL*/
 body{
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
 	text-align: center;
 	background-color: #000;
 	color:#684691;
 }
 input, button{
+	padding: 5px;
+	border:none;
+	background-color: #684691;
+	color: #000;
 	margin: 1% auto;
-	display: block;
+	display: inline-block;
+}
+h1{
+	font-family: 'Norican', cursive;
 }
 /*[1] INPUT*/
 .ball{
-	width: 300px;
-	height: 300px;
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+.input{
+	padding-top: 3%;
+}
+
+/*[2]OUTPUT*/
+.output p{
+	line-height: 14px;
 }
