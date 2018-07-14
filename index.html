@@ -21,8 +21,9 @@
 		<div class="input">
 			<h1>Check your horoscope!</h1>
 			<img src="img/crystalball.png" id="crystalball" class="ball" alt="crystal ball">
-			<input type="text" name="horoscope" id="inputMySign">
-			<button type="button" onclick="myZodiacSign()">enter</button>
+			<select id="mySign" onchange="showMySign()">
+			    <option value="" selected disabled hidden>Choose Your Sign</option>
+			</select>
 
 		</div>		
 		<!-- ENDING USER INPUT PART -->

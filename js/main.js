@@ -110,103 +110,21 @@ var zodiacSigns=[
 //in HTML i need to create an element with a unique ID
 //the element will display each property
 
-//when the user enters their sign the button will contain a function 
-//that retrieves a specific item in the array
-//so we need to assign hooks
-// FUNCTION WHEN CLICKING SUBMIT ON THE BUTTON
-//the input id is inputMySign
-//now that the HTML for the ouput part of this project is ready
-//i can start coding the function that will be triggered 
-//by the onClick property on the button 
-function myZodiacSign(){
-	var mySign=inputMySign.value;
-	var mySign=mySign.toLowerCase();
-	console.log(mySign);
-	if (mySign=="aries") {
-		document.getElementById("crystalball").src=zodiacSigns[0].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[0].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[0].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[0].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[0].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[0].luckyDay;
-	} else if(mySign=="taurus"){
-		document.getElementById("crystalball").src=zodiacSigns[1].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[1].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[1].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[1].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[1].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[1].luckyDay;
-	}else if(mySign=="gemini"){
-		document.getElementById("crystalball").src=zodiacSigns[2].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[2].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[2].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[2].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[2].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[2].luckyDay;
-	}else if(mySign=="cancer"){
-		document.getElementById("crystalball").src=zodiacSigns[3].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[3].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[3].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[3].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[3].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[3].luckyDay;
-	}else if(mySign=="leo"){
-		document.getElementById("crystalball").src=zodiacSigns[4].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[4].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[4].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[4].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[4].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[4].luckyDay;
-	}else if(mySign=="virgo"){
-		document.getElementById("crystalball").src=zodiacSigns[5].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[5].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[5].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[5].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[5].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[5].luckyDay;
-	}else if(mySign=="libra"){
-		document.getElementById("crystalball").src=zodiacSigns[6].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[6].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[6].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[6].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[6].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[6].luckyDay;
-	}else if(mySign=="scorpio"){
-		document.getElementById("crystalball").src=zodiacSigns[7].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[7].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[7].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[7].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[7].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[7].luckyDay;
-	}else if(mySign=="sagittarius"){
-		document.getElementById("crystalball").src=zodiacSigns[8].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[8].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[8].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[8].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[8].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[8].luckyDay;
-	}else if(mySign=="capricorn"){
-		document.getElementById("crystalball").src=zodiacSigns[9].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[9].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[9].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[9].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[9].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[9].luckyDay;
-	}else if(mySign=="aquarius"){
-		document.getElementById("crystalball").src=zodiacSigns[10].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[10].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[10].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[10].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[10].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[10].luckyDay;
-	}else if(mySign=="pisces"){
-		document.getElementById("crystalball").src=zodiacSigns[11].img;
-		document.getElementById("myZodiacSign").textContent=zodiacSigns[11].sign;
-		document.getElementById("myPosTraits").textContent="Your positive traits: " + zodiacSigns[11].positiveTraits;
-		document.getElementById("myNegTraits").textContent="Your negative traits: "+ zodiacSigns[11].negativeTraits;
-		document.getElementById("myLoveMatch").textContent="You get along bests with: "+ zodiacSigns[11].loveMatch;
-		document.getElementById("myLuckyDay").textContent="Your lucky day is: " +zodiacSigns[11].luckyDay;
-	}else{
-		document.getElementById("myPosTraits").textContent="I'm sorry I couldn't find your horoscope. Check your spelling and try again.";
-	}
-}
+// we are going to create a selection menu to accomodate for spelling mistakes 
+var select= document.getElementById("mySign");
+    for (var i=0; i<12; i++){
+        var opt=document.createElement("option");
+        opt.value=i;
+        opt.innerHTML=zodiacSigns[i].sign;
+        select.appendChild(opt);
+    }
+//then the specific properties are accessed using this code
+    function showMySign(){
+        var selectedSign= document.getElementById("mySign").value;
+        document.getElementById("crystalball").src=zodiacSigns[selectedSign].img;
+        document.getElementById("myZodiacSign").textContent=zodiacSigns[selectedSign].sign;
+        document.getElementById("myPosTraits").textContent="Your positive traits: "+zodiacSigns[selectedSign].positiveTraits;
+        document.getElementById("myNegTraits").textContent="Your negative traits: "+zodiacSigns[selectedSign].negativeTraits;
+        document.getElementById("myLoveMatch").textContent="You get along best with: "+zodiacSigns[selectedSign].loveMatch;
+        document.getElementById("myLuckyDay").textContent="Your lucky day is: "+zodiacSigns[selectedSign].luckyDay;
+    }
