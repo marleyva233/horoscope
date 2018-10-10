@@ -8,22 +8,25 @@
 
 /*[0] GENERAL*/
 body{
-	font-size: 16px;
+	background-image: url("https://www.dropbox.com/s/9zm8jsxc025cplw/stars1.jpg?raw=1");
+	font-size: 18px;
 	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 	text-align: center;
 	background-color: #000;
-	color:#684691;
+	color:rgb(0, 225, 225);
 }
 select, option{
 	padding: 5px;
 	border:none;
 	background-color: #684691;
-	color: #000;
+	color: rgb(0, 225, 225);
 	margin: 1% auto;
 	display: inline-block;
 }
 h1{
 	font-family: 'Norican', cursive;
+	color: rgb(225, 0, 225);
 }
 /*[1] INPUT*/
 .ball{
@@ -38,5 +41,9 @@ h1{
 
 /*[2]OUTPUT*/
 .output p{
-	line-height: 14px;
+	line-height: 14px;}
+.output{
+	display:none;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
 }

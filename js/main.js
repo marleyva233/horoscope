@@ -121,6 +121,7 @@ var select= document.getElementById("mySign");
 //then the specific properties are accessed using this code
     function showMySign(){
         var selectedSign= document.getElementById("mySign").value;
+        document.getElementById("output").style.display="initial";
         document.getElementById("crystalball").src=zodiacSigns[selectedSign].img;
         document.getElementById("myZodiacSign").textContent=zodiacSigns[selectedSign].sign;
         document.getElementById("myPosTraits").textContent="Your positive traits: "+zodiacSigns[selectedSign].positiveTraits;
