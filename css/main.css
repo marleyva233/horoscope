@@ -30,6 +30,8 @@ h1{
 }
 /*[1] INPUT*/
 .ball{
+	animation-duration: 7s;
+	text-shadow: 5px 5px rgba(0, 225, 225);
 	margin: 0 auto;
 	display: block;
 	width: 200px;

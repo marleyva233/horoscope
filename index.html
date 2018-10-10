@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 		<!-- bootstrap CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet"
+  		href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<!-- my custom css -->
 		<link rel="stylesheet" href="css/main.css">
 		<!-- my custom fonts -->
@@ -19,8 +21,8 @@
 			<div class="row">
 		<!-- STARTING USER INPUT PART-->
 				<div class="input col-10 mx-auto">
-					<h1>Check your horoscope!</h1>
-					<img src="img/crystalball.png" id="crystalball" class="ball" alt="crystal ball">
+					<h1 class="animated bounceInDown">Check your horoscope!</h1>
+					<img src="img/crystalball.png" id="crystalball" class="ball animated flash infinite" alt="crystal ball">
 					<select id="mySign" onchange="showMySign()">
 					    <option value="" selected disabled hidden>Choose Your Sign</option>
 					</select>
@@ -29,7 +31,7 @@
 		<!-- ENDING USER INPUT PART -->
 		<!-- STARTING OUTPUT PART -->
 			<div class="row">
-				<div id="output" class="output col-10 mx-auto">
+				<div id="output" class="output col-10 mx-auto animated bounceInUp">
 					<h1 id="myZodiacSign"></h1>
 					<p id="myPosTraits"></p>
 					<p id="myNegTraits"></p>

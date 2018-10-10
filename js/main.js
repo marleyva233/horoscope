@@ -128,4 +128,6 @@ var select= document.getElementById("mySign");
         document.getElementById("myNegTraits").textContent="Your negative traits: "+zodiacSigns[selectedSign].negativeTraits;
         document.getElementById("myLoveMatch").textContent="You get along best with: "+zodiacSigns[selectedSign].loveMatch;
         document.getElementById("myLuckyDay").textContent="Your lucky day is: "+zodiacSigns[selectedSign].luckyDay;
+        document.getElementById("crystalball").classList.remove("flash");
+        document.getElementById("mySign").style.display="none";
     }
