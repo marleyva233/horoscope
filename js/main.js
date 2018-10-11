@@ -101,16 +101,6 @@ var zodiacSigns=[
 		luckyDay: "Thursday",
 	}
 ];
-
-//console logging the array zodiacSigns verifies that the
-//objects have been created successfully and can be accessed 
-
-//when accessing the information i want each sign property
-//to be displayed separately for ease of use.
-//in HTML i need to create an element with a unique ID
-//the element will display each property
-
-// we are going to create a selection menu to accomodate for spelling mistakes 
 var select= document.getElementById("mySign");
     for (var i=0; i<12; i++){
         var opt=document.createElement("option");
