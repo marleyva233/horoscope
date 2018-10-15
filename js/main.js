@@ -1,8 +1,6 @@
 // GETTING SET UP FOR THE FUNCTION
 
-//ARRAY 
-// i am creating an array to later access
-//i have created 12 objects, each one containing a different sign
+//ARRAY of signs
 var zodiacSigns=[
 	{	
 		img: "img/newaries.png",
@@ -119,5 +117,4 @@ var select= document.getElementById("mySign");
         document.getElementById("myLoveMatch").textContent="You get along best with: "+zodiacSigns[selectedSign].loveMatch;
         document.getElementById("myLuckyDay").textContent="Your lucky day is: "+zodiacSigns[selectedSign].luckyDay;
         document.getElementById("crystalball").classList.remove("flash");
-        document.getElementById("selectSign").innerText="Choose another Sign";
     }

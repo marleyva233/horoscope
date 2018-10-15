@@ -9,6 +9,8 @@
 /*[0] GENERAL*/
 body{
 	background-image: url("https://www.dropbox.com/s/9zm8jsxc025cplw/stars1.jpg?raw=1");
+	background-size: cover;
+	background-repeat: no-repeat;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
