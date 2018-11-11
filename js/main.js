@@ -85,7 +85,7 @@ var zodiacSigns=[
 	{
 		img: "img/newaquarius.png",
 		sign: "Aquarius",
-		positiveTraits: "Progressie, original, independent, humanitarian.",
+		positiveTraits: "Progressive, original, independent, humanitarian.",
 		negativeTraits:"Runs from emotional expression, temperamental, uncompromising, aloof.",
 		loveMatch: "Leo and Saggitarius.",
 		luckyDay: "Saturday",
