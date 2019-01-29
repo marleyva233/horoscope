@@ -1,5 +1,3 @@
-// GETTING SET UP FOR THE FUNCTION
-
 //ARRAY of signs
 var zodiacSigns=[
 	{	

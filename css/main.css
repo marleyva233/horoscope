@@ -4,8 +4,6 @@
 [2]OUTPUT
 [3]MEDIA QUERIES
 */
-
-
 /*[0] GENERAL*/
 body{
 	background-image: url("https://www.dropbox.com/s/9zm8jsxc025cplw/stars1.jpg?raw=1");
@@ -54,7 +52,6 @@ h1{
     opacity: 0.3;
   }
 }
-
 @keyframes flash {
   from,
   50%,
@@ -67,13 +64,10 @@ h1{
     opacity: 0.3;
   }
 }
-
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
 }
-
-
 /*[2]OUTPUT*/
 .output p{
 	line-height: 14px;}
