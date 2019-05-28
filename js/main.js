@@ -96,15 +96,24 @@ const zodiacSigns = [
 		luckyDay: "Thursday",
 	}
 ];
-const select = document.getElementById("mySign");
-    for (var i = 0; i < 12; i++) {
-        var opt = document.createElement("option");
-        opt.value = i;
-        opt.innerHTML = zodiacSigns[i].sign;
-        select.appendChild(opt);
-    }
+// const select = document.getElementById("mySign");
+//     for (var i = 0; i < 12; i++) {
+//         var opt = document.createElement("option");
+//         opt.value = i;
+//         opt.innerHTML = zodiacSigns[i].sign;
+//         select.appendChild(opt);
+//     }
+ const select = document.getElementById("mySign");
+ 	zodiacSigns.forEach(function createOption(sign) {
+ 		var opt = document.createElement("option");
+ 			opt.value = sign.sign;
+ 			opt.innerHTML = sign.sign;
+ 			select.appendChild(opt);
+ 			console.log(sign.sign);
+ 	});
 function showMySign() {
     const selectedSign = document.getElementById("mySign").value;
+    console.log(selectedSign);
     const ball = document.getElementById("crystalball").src = zodiacSigns[selectedSign].img;
     let output = document.getElementById("output");
     	output.style.display = "initial";
