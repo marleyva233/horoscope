@@ -1,5 +1,4 @@
-//ARRAY of signs
-var zodiacSigns=[
+const zodiacSigns = [
 	{	
 		img: "img/newaries.png",
 		sign: "Aries",
@@ -97,22 +96,22 @@ var zodiacSigns=[
 		luckyDay: "Thursday",
 	}
 ];
-var select= document.getElementById("mySign");
-    for (var i=0; i<12; i++){
-        var opt=document.createElement("option");
-        opt.value=i;
-        opt.innerHTML=zodiacSigns[i].sign;
+const select = document.getElementById("mySign");
+    for (var i = 0; i < 12; i++) {
+        var opt = document.createElement("option");
+        opt.value = i;
+        opt.innerHTML = zodiacSigns[i].sign;
         select.appendChild(opt);
     }
-//then the specific properties are accessed using this code
-    function showMySign(){
-        var selectedSign= document.getElementById("mySign").value;
-        document.getElementById("output").style.display="initial";
-        document.getElementById("crystalball").src=zodiacSigns[selectedSign].img;
-        document.getElementById("myZodiacSign").textContent=zodiacSigns[selectedSign].sign;
-        document.getElementById("myPosTraits").textContent="Your positive traits: "+zodiacSigns[selectedSign].positiveTraits;
-        document.getElementById("myNegTraits").textContent="Your negative traits: "+zodiacSigns[selectedSign].negativeTraits;
-        document.getElementById("myLoveMatch").textContent="You get along best with: "+zodiacSigns[selectedSign].loveMatch;
-        document.getElementById("myLuckyDay").textContent="Your lucky day is: "+zodiacSigns[selectedSign].luckyDay;
-        document.getElementById("crystalball").classList.remove("flash");
-    }
+function showMySign() {
+    const selectedSign = document.getElementById("mySign").value;
+    const ball = document.getElementById("crystalball").src = zodiacSigns[selectedSign].img;
+    let output = document.getElementById("output");
+    	output.style.display = "initial";
+    	output.innerHTML = "<h1>" + zodiacSigns[selectedSign].sign + "</h1>";
+    	output.innerHTML += "<p>Your positive traits: " + zodiacSigns[selectedSign].positiveTraits + "</p>";
+    	output.innerHTML += "<p>Your negative traits: " + zodiacSigns[selectedSign].negativeTraits + "</p>";
+    	output.innerHTML += "<p>You get along best with: " + zodiacSigns[selectedSign].loveMatch + "</p>";
+    	output.innerHTML += "<p>Your lucky day is: "+ zodiacSigns[selectedSign].luckyDay + "</p>";
+    	ball.classList.remove("flash");
+}
