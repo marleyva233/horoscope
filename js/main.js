@@ -1,5 +1,5 @@
-const zodiacSigns = [
-	{	
+const zodiacSigns = {
+	Aries: {	
 		img: "img/newaries.png",
 		sign: "Aries",
 		positiveTraits:"Courageous, determined, confident, enthusiastic, optimistic, honest, passionate.",
@@ -7,7 +7,7 @@ const zodiacSigns = [
 		loveMatch: "Libra, Leo",
 		luckyDay: "Tuesday" ,
 	},
-	{
+	Taurus: {
 		img: "img/newtaurus.png",
 		sign: "Taurus",
 		positiveTraits: "Reliable, patient, practical, devoted, responsible, stable.",
@@ -15,7 +15,7 @@ const zodiacSigns = [
 		loveMatch: "Scorpio or Cancer",
 		luckyDay: "Friday and Monday",
 	},
-	{
+	Gemini: {
 		img: "img/newgemini.png",
 		sign: "Gemini",
 		positiveTraits: "Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas",
@@ -23,7 +23,7 @@ const zodiacSigns = [
 		loveMatch: "Saggitarius, Aquarius",
 		luckyDay: "Wednesday",
 	},
-	{
+	Cancer: {
 		img: "img/newcancer.png",
 		sign: "Cancer",
 		positiveTraits: "Tenacius, highly imaginative, loyal, emotional, sympathetic, persuasive.",
@@ -31,7 +31,7 @@ const zodiacSigns = [
 		loveMatch: "Capricorn and Taurus.",
 		luckyDay: "Monday and Thursday.",
 	},
-	{
+	Leo: {
 		img: "img/newleo.png",
 		sign: "Leo",
 		positiveTraits: "Creative, passionate, generous, warm-hearted, cheerful, humorous.",
@@ -39,7 +39,7 @@ const zodiacSigns = [
 		loveMatch: "Aquarius and Gemini",
 		luckyDay: "Sunday",
 	},
-	{
+	Virgo: {
 		img: "img/newvirgo.png",
 		sign: "Virgo",
 		positiveTraits: "Loyal, analytical, kind, hardworking, practical.",
@@ -47,7 +47,7 @@ const zodiacSigns = [
 		loveMatch: "Pisces and Cancer.",
 		luckyDay: "Wednesday",
 	},
-	{
+	Libra: {
 		img: "img/newlibra.png",
 		sign: "Libra",
 		positiveTraits: "Cooperative, diplomatic, gracious, fair-minded, social.",
@@ -55,7 +55,7 @@ const zodiacSigns = [
 		loveMatch: "Aries and Saggitarius",
 		luckyDay: "Friday",
 	},
-	{
+	Scorpio: {
 		img: "img/newscorpio.png",
 		sign: "Scorpio",
 		positiveTraits: "Resourceful, brave, passionate, stubborn, a true friend.",
@@ -63,7 +63,7 @@ const zodiacSigns = [
 		loveMatch: "Taurus and Cancer.",
 		luckyDay: "Tuesday",
 	},
-	{
+	Sagittarius: {
 		img: "img/newsagittarius.png",
 		sign: "Sagittarius",
 		positiveTraits: "Generous, idealistic, great sense of humour.",
@@ -71,7 +71,7 @@ const zodiacSigns = [
 		loveMatch: "Gemini and Aries.",
 		luckyDay: "Thursday",
 	},
-	{
+	Capricorn: {
 		img: "img/newcapricorn.png",
 		sign: "Capricorn",
 		positiveTraits: "responsible, disciplined, self-control, good manners.",
@@ -79,7 +79,7 @@ const zodiacSigns = [
 		loveMatch: "Taurus and Cancer.",
 		luckyDay: "Saturday",
 	},
-	{
+	Aquarius: {
 		img: "img/newaquarius.png",
 		sign: "Aquarius",
 		positiveTraits: "Progressive, original, independent, humanitarian.",
@@ -87,34 +87,27 @@ const zodiacSigns = [
 		loveMatch: "Leo and Saggitarius.",
 		luckyDay: "Saturday",
 	},
-	{
-		img: "img/newpisces.png",
+	Pisces: {
 		sign: "Pisces",
+		img: "img/newpisces.png",
 		positiveTraits: "Compassionate, artistic, intuitive, gentle, wise, musical.",
 		negativeTraits: "Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr.",
 		loveMatch: "Virgo and Taurus.",
 		luckyDay: "Thursday",
 	}
-];
-// const select = document.getElementById("mySign");
-//     for (var i = 0; i < 12; i++) {
-//         var opt = document.createElement("option");
-//         opt.value = i;
-//         opt.innerHTML = zodiacSigns[i].sign;
-//         select.appendChild(opt);
-//     }
+}
  const select = document.getElementById("mySign");
- 	zodiacSigns.forEach(function createOption(sign) {
- 		var opt = document.createElement("option");
- 			opt.value = sign.sign;
- 			opt.innerHTML = sign.sign;
- 			select.appendChild(opt);
- 			console.log(sign.sign);
- 	});
+ Object.entries(zodiacSigns).forEach(([key, val]) => {
+    let opt = document.createElement("option")
+ 			opt.value = key
+ 			opt.innerHTML = key
+ 			select.appendChild(opt)
+});
 function showMySign() {
     const selectedSign = document.getElementById("mySign").value;
     console.log(selectedSign);
-    const ball = document.getElementById("crystalball").src = zodiacSigns[selectedSign].img;
+    const ball = document.getElementById("crystalball");
+    	ball.src = zodiacSigns[selectedSign].img;
     let output = document.getElementById("output");
     	output.style.display = "initial";
     	output.innerHTML = "<h1>" + zodiacSigns[selectedSign].sign + "</h1>";
