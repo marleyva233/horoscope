@@ -5,31 +5,32 @@
 [3]MEDIA QUERIES
 */
 /*[0] GENERAL*/
-body{
+body {
 	background-image: url("https://marleyva233.github.io/horoscope/img/stars1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
-	font-weight: bold;
+	font-weight: bold;e
 	text-align: center;
 	background-color: #000;
 	color:rgb(0, 225, 225);
 }
-select, option{
+select, 
+option {
 	padding: 5px;
 	border:none;
 	background-color: #684691;
 	color: rgb(0, 225, 225);
-	margin: 1% auto;
+	margin: 0 auto;
 	display: inline-block;
 }
-h1{
+h1 {
 	font-family: 'Norican', cursive;
 	color: rgb(225, 0, 225);
 }
 /*[1] INPUT*/
-.ball{
+.ball {
 	animation-duration: 7s;
 	text-shadow: 5px 5px rgba(0, 225, 225);
 	margin: 0 auto;
@@ -37,7 +38,7 @@ h1{
 	width: 200px;
 	height: 200px;
 }
-.input{
+.input {
 	padding-top: 3%;
 }
 @-webkit-keyframes flash {
@@ -69,9 +70,9 @@ h1{
   animation-name: flash;
 }
 /*[2]OUTPUT*/
-.output p{
+.output p {
 	line-height: 14px;}
-.output{
+.output {
 	display:none;
 	background: rgba(0, 0, 0, 0.7);
 	border-radius: 50%;
