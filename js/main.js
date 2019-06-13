@@ -83,7 +83,7 @@ const zodiacSigns = {
 		loveMatch: "Virgo and Taurus.",
 		luckyDay: "Thursday",
 	}
-}
+};
 const select = document.getElementById("mySign");
 Object.entries(zodiacSigns).forEach(([key]) => {
 	    let opt = document.createElement("option")
@@ -95,10 +95,10 @@ function showMySign() {
     const selectedSign = document.getElementById("mySign").value;
     const ball = document.getElementById("crystalball");
     	ball.src = zodiacSigns[selectedSign].img;
-    let signData = "<h1>" + selectedSign + "</h1><p>Your positive traits: " + zodiacSigns[selectedSign].positiveTraits + "</p>";
-    	signData += "<p>Your negative traits: " + zodiacSigns[selectedSign].negativeTraits + "</p>";
-    	signData += "<p>You get along best with: " + zodiacSigns[selectedSign].loveMatch + "</p>";
-    	signData += "<p>Your lucky day is: "+ zodiacSigns[selectedSign].luckyDay + "</p>";
+    let signData = `<h1> ${selectedSign} </h1><p>Your positive traits: ${zodiacSigns[selectedSign].positiveTraits} </p>
+    	<p>Your negative traits: ${zodiacSigns[selectedSign].negativeTraits} </p>
+    	<p>You get along best with: ${zodiacSigns[selectedSign].loveMatch} </p>
+    	<p>Your lucky day is: ${zodiacSigns[selectedSign].luckyDay} </p>`;
     let output = document.getElementById("output");
     	output.style.display = "initial";
     	output.innerHTML = signData;
