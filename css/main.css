@@ -11,7 +11,6 @@ body {
 	background-repeat: no-repeat;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
-	font-weight: bold;e
 	text-align: center;
 	background-color: #000;
 	color:rgb(0, 225, 225);
@@ -26,8 +25,9 @@ option {
 	display: inline-block;
 }
 h1 {
-	font-family: 'Norican', cursive;
+	font-family: 'Lato', sans-serif;
 	color: rgb(225, 0, 225);
+	font-weight: bold;
 }
 /*[1] INPUT*/
 .ball {
